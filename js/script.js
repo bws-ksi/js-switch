@@ -1,8 +1,8 @@
 let mode = Number(prompt('Enter identificator access 0-7'));
 
-if (isNaN(mode) || mode >7 || mode < 0 ) {
-  console.log('Incorrect data entered, please re-enter. Only digits from 0 to 7 are expected');
-} else {
+// if (isNaN(mode) || mode >7 || mode < 0 ) {
+//   console.log('Incorrect data entered, please re-enter. Only digits from 0 to 7 are expected');
+// } else {
   switch (mode) {
   case 0: {
     console.log('No permissions at all (никаких прав) (---)');
@@ -37,6 +37,7 @@ if (isNaN(mode) || mode >7 || mode < 0 ) {
     break;
   }
   default:
+    console.log('Incorrect data entered, please re-enter. Only digits from 0 to 7 are expected');
     break;
 }
-}
+//}
